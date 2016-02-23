@@ -5,7 +5,35 @@
 ##今回主役となるプラグイン
 - [gulp-notify](https://github.com/mikaelbr/gulp-notify)
 - [gulp-plumber](https://github.com/floatdrop/gulp-plumber)
-- [require-dir](https://github.com/aseemk/requireDir)
+- [require-dir](https://github.com/aseemk/requireDir)  
+
+##環境説明
+まずはローカルにクローンして頂き、ターミナルで以下のコマンド入力してください。
+```
+$ npm i
+```  
+
+##ディレクトリ一覧  
+```
+├── README.md
+├── assets
+│   ├── ejs
+│   │   └── index.ejs
+│   └── js
+│       └── common.js
+├── gulp
+│   ├── browserify.js
+│   ├── ejs.js
+│   ├── path.js
+│   └── watch.js
+├── gulpfile.babel.js
+├── package.json
+└── template
+    ├── index.ejs
+    ├── index.html
+    └── js
+        └── main.js
+```
 
 ## 詳しくは...
 [こちらの記事をチェック！](https://github.com/aseemk/requireDir)
