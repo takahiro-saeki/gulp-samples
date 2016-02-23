@@ -4,8 +4,8 @@
 
 ##今回主役となるプラグイン
 - [gulp-notify](https://github.com/mikaelbr/gulp-notify)
-- gulp-plumber
-- require-dir
+- [gulp-plumber](https://github.com/floatdrop/gulp-plumber)
+- [require-dir](https://github.com/aseemk/requireDir)
 
-## and more...?
-coming soon...
+## 詳しくは...
+[こちらの記事をチェック！](https://github.com/aseemk/requireDir)
