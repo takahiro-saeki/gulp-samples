@@ -9,7 +9,9 @@
   "description": "this is a sample of gulp.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "tree": "tree -I node_modules"
   },
   "repository": {
     "type": "git",
