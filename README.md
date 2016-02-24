@@ -82,8 +82,20 @@ gulp.task('js', () => {
   .pipe(gulp.dest(PATHS.TEMP_JS))
 });
 ```  
-今回サンプルを用意していますので、gulpフォルダ内を参考までに見て頂ければと思います。
+今回サンプルを用意していますので、gulpフォルダ内を参考までに見て頂ければと思います。  
 
+##require-dir
+gulpfile.babel.jsのタスク分割をしたかったのですが、中々上手くいかずに苦しんでいたところ偶然require-dirに出会いました。  
+説明するよりも見てもらった方が早いですが、gulpfile.babel.js(あるいはgulpfile.js)に以下のようなコードを記述します。  
+```
+import requireDir from 'require-dir';
+requireDir('./gulp');
+```  
+importし、requireするフォルダを指定しています。あとは指定したフォルダの中にタスクを書いてもらえばOK！
+ただ注意点としては個別に分けたタスクそれぞれにgulpをimportしないと動作しません。なので以下の1行は必ず入れてあげてください。  
+```
+import gulp from 'gulp';
+```  
 
-## 詳しくは...
-[こちらの記事をチェック！](https://github.com/aseemk/requireDir)
+## もふもふ☆パラダイスも合わせてチェック！  
+現在記事準備中です...orz
